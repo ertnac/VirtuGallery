@@ -1333,7 +1333,7 @@
   <nav id="navbar">
     <div class="nav-left">
       <ul class="nav-links">
-        <li><a href="#hero">Hello</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#" class="marketplace-link">Marketplace</a></li>
