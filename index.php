@@ -1336,8 +1336,8 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#" class="marketplace-link">Marketplace</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="../Pages/Marketplace.php" class="marketplace-link">Marketplace</a></li>
+        <li><a href="../VirtuGallery-master/index.php">About Us</a></li>
       </ul>
     </div>
     <div class="logo">VirtuGallery</div>
@@ -1431,7 +1431,7 @@
     <div class="hero-content">
       <h1>Discover Art That Speaks to You</h1>
       <p>Explore, Collect, and Own Masterpieces</p>
-      <a href="Pages/home.php" class="btn">Begin Your Journey</a>
+      <a href="../VirtuGallery-master/Pages/home.php" class="btn">Begin Your Journey</a>
     </div>
     <div class="scroll-prompt">
       <span>Scroll Down</span>
@@ -2010,7 +2010,7 @@
               if (redirectAfterLogin) {
                 window.location.href = redirectAfterLogin;
               } else {
-                window.location.href = "index.php";
+                window.location.href = "/Virtugallery/index.php";
               }
             } else {
               alert(data.errors.join("\n"));
@@ -2050,7 +2050,7 @@
           .then((data) => {
             if (data.success) {
               // Redirect to index.php after successful logout
-              window.location.href = "index.php";
+              window.location.href = "../Pages/index.php";
             } else {
               alert("Logout failed. Please try again.");
             }
@@ -2077,9 +2077,9 @@
       marketplaceLink.addEventListener("click", function(e) {
         e.preventDefault();
         if (isLoggedIn) {
-          window.location.href = "../Pages/Marketplace.html";
+          window.location.href = "../Pages/Marketplace.php";
         } else {
-          redirectAfterLogin = "../Pages/Marketplace.html";
+          redirectAfterLogin = "../Pages/Marketplace.php";
           showModal("login");
         }
       });

@@ -645,11 +645,11 @@
     <nav id="navbar">
         <div class="nav-left">
             <ul class="nav-links">
-                <li><a href="landingPage.html">Home</a></li>
-                <li><a href="index( 4).html">Features</a></li>
-                <li><a href="index( 4).html">Gallery</a></li>
-                <li><a href="Marketplace.html" class="active">Marketplace</a></li>
-                <li><a href="index( 4).html">About Us</a></li>
+                <li><a href="/VirtuGallery-master/index.php#home">Home</a></li>
+                <li><a href="/VirtuGallery-master/index.php#features">Features</a></li>
+                <li><a href="/VirtuGallery-master/index.php#gallery">Gallery</a></li>
+                <li><a href="../Pages/Marketplace.php" class="active">Marketplace</a></li>
+                <li><a href="/VirtuGallery-master/index.php#about">About Us</a></li>
             </ul>
         </div>
         <div class="logo">VirtuGallery</div>
@@ -663,9 +663,9 @@
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="profile-menu">
-                    <a href="UserProfilePage.html">Profile</a>
-                    <a href="settings.html">Settings</a>
-                    <a href="UserProfilePage.html">My Collection</a>
+                    <a href="../Pages/UserProfilePage.php">Profile</a>
+                    <a href="../Pages/settings.php">Settings</a>
+                    <a href="../Pages/UserProfilePage.php">My Collection</a>
                     <a href="#">Logout</a>
                 </div>
             </div>

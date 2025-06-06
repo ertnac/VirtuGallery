@@ -39,7 +39,6 @@ if (!isset($_SESSION['user_id'])) {
             justify-content: center;
             align-items: center;
             padding: 40px 20px;
-            position: relative;
         }
 
         .background-overlay {
@@ -191,34 +190,27 @@ if (!isset($_SESSION['user_id'])) {
             transform: translateY(0);
         }
 
-        /* New circular back button styles */
-        .back-button-circle {
-            position: fixed;
-            top: 30px;
-            left: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 10;
+        .back-button {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            background: none;
             border: none;
             color: var(--primary-color);
-        }
-
-        .back-button-circle:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateX(-3px);
-        }
-
-        .back-button-circle i {
             font-size: 1.2rem;
+            cursor: pointer;
+            display: grid;
+            justify-content: center;
+            align-items: right;
+            gap: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            color: var(--secondary-color);
+            transform: translateX(-3px);
         }
 
         .form-group {
@@ -323,11 +315,9 @@ if (!isset($_SESSION['user_id'])) {
                 margin-bottom: 25px;
             }
 
-            .back-button-circle {
-                top: 20px;
-                left: 20px;
-                width: 45px;
-                height: 45px;
+            .back-button {
+                top: 15px;
+                left: 15px;
             }
         }
     </style>
@@ -336,12 +326,11 @@ if (!isset($_SESSION['user_id'])) {
 <body>
     <div class="background-overlay"></div>
 
-    <!-- Circular back button -->
-    <button class="back-button-circle" onclick="window.history.back()">
-        <i class="fas fa-arrow-left"></i>
-    </button>
-
     <div class="new-post-container">
+        <button class="back-button" onclick="window.history.back()">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
         <h2>Upload New Artwork</h2>
 
         <form id="uploadForm" method="post" enctype="multipart/form-data">
@@ -505,7 +494,7 @@ if (!isset($_SESSION['user_id'])) {
             });
 
             modalButton.addEventListener('click', function() {
-                window.location.href = 'home.php';
+                window.location.href = 'home.php'; // Changed to .php
             });
         });
     </script>

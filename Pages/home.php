@@ -1202,11 +1202,11 @@ try {
         <nav id="navbar">
             <div class="nav-left">
                 <ul class="nav-links">
-                    <li><a href="../index.php">Home</a></li>
-                    <li><a href="index(4) (6).html">Features</a></li>
-                    <li><a href="index(4) (6).html">Gallery</a></li>
-                    <li><a href="/Pages/Marketplace.php" class="marketplace-link">Marketplace</a></li>
-                    <li><a href="index (4) (6).html#about">About Us</a></li>
+                    <li><a href="../Pages/home.php">Home</a></li>
+                    <li><a href="../index.php">Features</a></li>
+                    <li><a href="../index.php">Gallery</a></li>
+                    <li><a href="../Pages/Marketplace.php" class="marketplace-link">Marketplace</a></li>
+                    <li><a href="../index.php#about">About Us</a></li>
                 </ul>
             </div>
             <div class="logo">VirtuGallery</div>
@@ -1251,19 +1251,19 @@ try {
                             </div>
                         </div>
                         <div class="sidebarbuttons">
-                            <a href="home.html" class="Home active">
+                            <a href="../Pages/home.php" class="Home active">
                                 <i class="fas fa-home"></i>
                                 <span>Home</span>
                             </a>
-                            <a href="notifications.html" class="Notifications">
+                            <a href="../Pages/notifications.php" class="Notifications">
                                 <i class="fas fa-bell"></i>
                                 <span>Notifications</span>
                             </a>
-                            <a href="ranking.html" class="Ranking">
+                            <a href="../Pages/ranking.php" class="Ranking">
                                 <i class="fas fa-trophy"></i>
                                 <span>Ranking</span>
                             </a>
-                            <a href="settings.html" class="Settings">
+                            <a href="../Pages/settings.php" class="Settings">
                                 <i class="fas fa-cog"></i>
                                 <span>Settings</span>
                             </a>

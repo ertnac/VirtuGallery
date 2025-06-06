@@ -642,11 +642,11 @@
         <nav id="navbar">
             <div class="nav-left">
                 <ul class="nav-links">
-                    <li><a href="index (4).html#hero">Home</a></li>
-                    <li><a href="index (4).html#features">Features</a></li>
-                    <li><a href="index (4).html#gallery">Gallery</a></li>
-                    <li><a href="MarketplacePage.html" class="marketplace-link">Marketplace</a></li>
-                    <li><a href="index (4).html#about">About Us</a></li>
+                    <li><a href="../Pages/home.php">Home</a></li>
+                    <li><a href="../index.php#features">Features</a></li>
+                    <li><a href="../index.php">Gallery</a></li>
+                    <li><a href="../Pages/Marketplace.php" class="marketplace-link">Marketplace</a></li>
+                    <li><a href="../index.php#about">About Us</a></li>
                 </ul>
             </div>
             <div class="logo">VirtuGallery</div>
@@ -656,8 +656,8 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="profile-menu">
-                        <a href="../Pages/UserProfilePage.html">Profile</a>
-                        <a href="../Pages/UserProfilePage.html">My Collection</a>
+                        <a href="../Pages/UserProfilePage.php">Profile</a>
+                        <a href="../Pages/UserProfilePage.php">My Collection</a>
                         <a href="#">Logout</a>
                     </div>
                 </div>
@@ -695,19 +695,19 @@
                             </div>
                         </div>
                         <div class="sidebarbuttons">
-                            <a href="home.html" class="Home">
+                            <a href="../Pages/home.php" class="Home">
                                 <i class="fas fa-home"></i>
                                 <span>Home</span>
                             </a>
-                            <a href="notifications.html" class="Notifications active">
+                            <a href="../Pages/notifications.php" class="Notifications active">
                                 <i class="fas fa-bell"></i>
                                 <span>Notifications</span>
                             </a>
-                            <a href="ranking.html" class="Ranking">
+                            <a href="../Pages/ranking.php" class="Ranking">
                                 <i class="fas fa-trophy"></i>
                                 <span>Ranking</span>
                             </a>
-                            <a href="settings.html" class="Settings">
+                            <a href="../Pages/settings.php" class="Settings">
                                 <i class="fas fa-cog"></i>
                                 <span>Settings</span>
                             </a>
@@ -863,17 +863,14 @@
                 currentView = 'notifications';
             }
 
-            // Add artwork functionality
-            document.querySelector('.add-image-btn').addEventListener('click', function () {
-                const placeholder = document.querySelector('.add-work-placeholder');
-                const details = document.querySelector('.artwork-details');
-
-                if (details.style.display === 'none') {
-                    placeholder.style.display = 'none';
-                    details.style.display = 'block';
+            
+            // Add Artwork button functionality
+            document.getElementById('add-artwork-btn').addEventListener('click', function() {
+                if (isLoggedIn) {
+                    window.location.href = '../Pages/uploadArtworkPage.php';
                 } else {
-                    placeholder.style.display = 'block';
-                    details.style.display = 'none';
+                    redirectAfterLogin = '../Pages/uploadArtworkPage.php';
+                    showModal('login');
                 }
             });
 
