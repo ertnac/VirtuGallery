@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ]);
 
             $_SESSION['success_message'] = "Profile updated successfully!";
-            header("Location: editProfile.php");
+            header("Location: UserProfilePage.php");
             exit();
         } catch (PDOException $e) {
             $errors[] = "Error updating profile: " . $e->getMessage();

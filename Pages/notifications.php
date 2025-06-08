@@ -642,11 +642,11 @@
         <nav id="navbar">
             <div class="nav-left">
                 <ul class="nav-links">
-                    <li><a href="index (4).html#hero">Home</a></li>
-                    <li><a href="index (4).html#features">Features</a></li>
-                    <li><a href="index (4).html#gallery">Gallery</a></li>
-                    <li><a href="MarketplacePage.html" class="marketplace-link">Marketplace</a></li>
-                    <li><a href="index (4).html#about">About Us</a></li>
+                    <li><a href="../index.php#hero">Home</a></li>
+                    <li><a href="../index.php#features">Features</a></li>
+                    <li><a href="../index.php#gallery">Gallery</a></li>
+                    <li><a href="Marketplace.php" class="marketplace-link">Marketplace</a></li>
+                    <li><a href="">About Us</a></li>
                 </ul>
             </div>
             <div class="logo">VirtuGallery</div>
@@ -695,19 +695,19 @@
                             </div>
                         </div>
                         <div class="sidebarbuttons">
-                            <a href="home.html" class="Home">
+                            <a href="home.php" class="Home">
                                 <i class="fas fa-home"></i>
                                 <span>Home</span>
                             </a>
-                            <a href="notifications.html" class="Notifications active">
+                            <a href="notifications.php" class="Notifications active">
                                 <i class="fas fa-bell"></i>
                                 <span>Notifications</span>
                             </a>
-                            <a href="ranking.html" class="Ranking">
+                            <a href="ranking.php" class="Ranking">
                                 <i class="fas fa-trophy"></i>
                                 <span>Ranking</span>
                             </a>
-                            <a href="settings.html" class="Settings">
+                            <a href="settings.php" class="Settings">
                                 <i class="fas fa-cog"></i>
                                 <span>Settings</span>
                             </a>

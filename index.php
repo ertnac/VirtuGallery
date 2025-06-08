@@ -1467,9 +1467,9 @@
         <div class="feature-icon">
           <i class="fas fa-globe"></i>
         </div>
-        <h3>Global Shipping</h3>
+        <h3>Local Shipping</h3>
         <p>
-          We deliver artworks worldwide with specialized packaging to ensure
+          We deliver artworks nationwide with specialized packaging to ensure
           they arrive in perfect condition.
         </p>
       </div>
@@ -1485,7 +1485,11 @@
       </div>
     </div>
     <div class="carousel-container">
-      <h1>Photo Gallery</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
       <div class="carousel">
         <div class="carousel-inner"></div>
         <div class="carousel-indicators"></div>
@@ -1493,7 +1497,6 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
   <!-- Gallery Section -->
   <section id="gallery">
     <div class="gallery-header">
@@ -1505,7 +1508,6 @@
             <option value="painting">Paintings</option>
             <option value="sculpture">Sculptures</option>
             <option value="photography">Photography</option>
-            <option value="digital">Digital Art</option>
           </select>
           <i class="fas fa-chevron-down"></i>
         </div>
@@ -1539,7 +1541,7 @@
           <p class="artist-name">by Elena Rodriguez</p>
           <div class="price-rating">
             <span class="price">$2,400</span>
-            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+            
           </div>
           <button class="buy-btn">Add to Cart</button>
         </div>
@@ -1550,7 +1552,7 @@
           <img
             src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1986&q=80"
             alt="Modern sculpture"
-            class="artwork-image" />
+            class="artwork-image"=/>
           <div class="quick-view">Quick View</div>
           <div class="artwork-actions">
             <button class="wishlist-btn" title="Add to wishlist"><i class="far fa-heart"></i></button>
@@ -1562,7 +1564,7 @@
           <p class="artist-name">by Marcus Chen</p>
           <div class="price-rating">
             <span class="price">$3,800</span>
-            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+            
           </div>
           <button class="buy-btn">Add to Cart</button>
         </div>
@@ -1585,7 +1587,7 @@
           <p class="artist-name">by Aisha Johnson</p>
           <div class="price-rating">
             <span class="price">$1,950</span>
-            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+            
           </div>
           <button class="buy-btn">Add to Cart</button>
         </div>
@@ -1608,7 +1610,7 @@
           <p class="artist-name">by Thomas Wright</p>
           <div class="price-rating">
             <span class="price">$2,800</span>
-            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+            
           </div>
           <button class="buy-btn">Add to Cart</button>
         </div>
@@ -1631,7 +1633,7 @@
           <p class="artist-name">by Sam Wilson</p>
           <div class="price-rating">
             <span class="price">$1,250</span>
-            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+            
           </div>
           <button class="buy-btn">Add to Cart</button>
         </div>
@@ -1654,7 +1656,6 @@
           <p class="artist-name">by Maria Gonzalez</p>
           <div class="price-rating">
             <span class="price">$3,200</span>
-            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
           </div>
           <button class="buy-btn">Add to Cart</button>
         </div>
@@ -1681,28 +1682,26 @@
       <div class="testimonial-card">
         <div class="testimonial-header">
           <img
-            src="https://randomuser.me/api/portraits/women/32.jpg"
+            src="https://randomuser.me/api/portraits/men/45.jpg"
             alt="Sarah Johnson"
             class="testimonial-avatar" />
           <div class="testimonial-author">
-            <h4>Sarah Johnson</h4>
-            <div class="stars">★★★★★</div>
+            <h4>Sir Kevin Daryl Calica</h4>
+            <div class="stars">★★★★</div>
           </div>
         </div>
         <p class="testimonial-text">
-          "The gallery made collecting art effortless! Their team helped me
-          find the perfect piece for my home, and the entire process was
-          seamless."
+          "I think for me yes, it helps a lot. thank you..."
         </p>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-header">
           <img
-            src="https://randomuser.me/api/portraits/men/45.jpg"
+            src="https://randomuser.me/api/portraits/women/32.jpg"
             alt="Michael Chen"
             class="testimonial-avatar" />
           <div class="testimonial-author">
-            <h4>Michael Chen</h4>
+            <h4>Shanaya Concibido</h4>
             <div class="stars">★★★★★</div>
           </div>
         </div>
@@ -1718,12 +1717,12 @@
             alt="Priya Patel"
             class="testimonial-avatar" />
           <div class="testimonial-author">
-            <h4>Priya Patel</h4>
+            <h4>Topher Hilairon</h4>
             <div class="stars">★★★★★</div>
           </div>
         </div>
         <p class="testimonial-text">
-          "The shipping was incredibly careful and professional. My artwork
+          "The local shipping was incredibly careful and professional. My artwork
           arrived in perfect condition, beautifully packaged. Will definitely
           buy again!"
         </p>
@@ -2077,9 +2076,9 @@
       marketplaceLink.addEventListener("click", function(e) {
         e.preventDefault();
         if (isLoggedIn) {
-          window.location.href = "../Pages/Marketplace.html";
+          window.location.href = "/VirtuGallery/Pages/Marketplace.php";
         } else {
-          redirectAfterLogin = "../Pages/Marketplace.html";
+          redirectAfterLogin = "/VirtuGallery/Pages/Marketplace.php";
           showModal("login");
         }
       });

@@ -643,15 +643,15 @@
 <body>
     <!-- Navigation -->
     <nav id="navbar">
-        <div class="nav-left">
-            <ul class="nav-links">
-                <li><a href="landingPage.html">Home</a></li>
-                <li><a href="index( 4).html">Features</a></li>
-                <li><a href="index( 4).html">Gallery</a></li>
-                <li><a href="Marketplace.html" class="active">Marketplace</a></li>
-                <li><a href="index( 4).html">About Us</a></li>
-            </ul>
-        </div>
+         <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="../index.php#hero">Home</a></li>
+                    <li><a href="../index.php#features">Features</a></li>
+                    <li><a href="../index.php#gallery">Gallery</a></li>
+                    <li><a href="Marketplace.php" class="marketplace-link">Marketplace</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
         <div class="logo">VirtuGallery</div>
         <div class="nav-right">
             <a href="../Pages/cart.html" class="cart-icon">
@@ -663,9 +663,9 @@
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="profile-menu">
-                    <a href="UserProfilePage.html">Profile</a>
-                    <a href="settings.html">Settings</a>
-                    <a href="UserProfilePage.html">My Collection</a>
+                    <a href="UserProfilePage.php">Profile</a>
+                    <a href="settings.php">Settings</a>
+                    <a href="UserProfilePage.php">My Collection</a>
                     <a href="#">Logout</a>
                 </div>
             </div>
@@ -691,10 +691,10 @@
             <!-- Artwork 1 -->
             <div class="artwork-card">
                 <div class="artwork-image-container">
-                    <img src="https://source.unsplash.com/random/600x600?art1" alt="Artwork" class="artwork-image">
+                    <img src="\VirtuGallery\uploads\artwork_4_683f635f9d55e.jpg" alt="Artwork" class="artwork-image">
                 </div>
                 <div class="artwork-info">
-                    <div class="artwork-title">Sunset Dreams</div>
+                    <div class="artwork-title">Monalisa</div>
                     <div class="artwork-artist">by Clara Bennett</div>
                     <div class="artwork-price">₱25,000</div>
                     <div class="artwork-actions">
@@ -709,10 +709,10 @@
             <!-- Artwork 2 -->
             <div class="artwork-card">
                 <div class="artwork-image-container">
-                    <img src="https://source.unsplash.com/random/600x600?art2" alt="Artwork" class="artwork-image">
+                    <img src="\VirtuGallery\uploads\artwork_3_68438343461c4.jpg" alt="Artwork" class="artwork-image">
                 </div>
                 <div class="artwork-info">
-                    <div class="artwork-title">Ocean Waves</div>
+                    <div class="artwork-title">Medusa</div>
                     <div class="artwork-artist">by Marcus Lee</div>
                     <div class="artwork-price">₱17,500</div>
                     <div class="artwork-actions">
@@ -727,7 +727,7 @@
             <!-- Artwork 3 -->
             <div class="artwork-card">
                 <div class="artwork-image-container">
-                    <img src="https://source.unsplash.com/random/600x600?art3" alt="Artwork" class="artwork-image">
+                    <img src="\VirtuGallery\uploads\artwork_3_6843823bdb475.jpg" alt="Artwork" class="artwork-image">
                 </div>
                 <div class="artwork-info">
                     <div class="artwork-title">Mountain Peak</div>
@@ -745,7 +745,7 @@
             <!-- Artwork 4 -->
             <div class="artwork-card">
                 <div class="artwork-image-container">
-                    <img src="https://source.unsplash.com/random/600x600?art4" alt="Artwork" class="artwork-image">
+                    <img src="\VirtuGallery\uploads\artwork_3_684383c848806.jpg" alt="Artwork" class="artwork-image">
                 </div>
                 <div class="artwork-info">
                     <div class="artwork-title">Forest Path</div>
@@ -763,7 +763,7 @@
             <!-- Artwork 5 -->
             <div class="artwork-card">
                 <div class="artwork-image-container">
-                    <img src="https://source.unsplash.com/random/600x600?art5" alt="Artwork" class="artwork-image">
+                    <img src="\VirtuGallery\uploads\artwork_3_684381ca59dde.jpg" alt="Artwork" class="artwork-image">
                 </div>
                 <div class="artwork-info">
                     <div class="artwork-title">Abstract Thoughts</div>
@@ -781,7 +781,7 @@
             <!-- Artwork 6 -->
             <div class="artwork-card">
                 <div class="artwork-image-container">
-                    <img src="https://source.unsplash.com/random/600x600?art6" alt="Artwork" class="artwork-image">
+                    <img src="\VirtuGallery\uploads\artwork_3_68439f96c07df.jpg" alt="Artwork" class="artwork-image">
                 </div>
                 <div class="artwork-info">
                     <div class="artwork-title">City Lights</div>
@@ -814,7 +814,7 @@
 
                     <div class="modal-info-item">
                         <div class="modal-info-label">Location</div>
-                        <div class="modal-info-value" id="modalLocation">New York, USA</div>
+                        <div class="modal-info-value" id="modalLocation">San Pablo, Laguna</div>
                     </div>
 
                     <div class="modal-info-item">

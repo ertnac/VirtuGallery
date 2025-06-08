@@ -35,6 +35,7 @@ try {
             p.image_path, 
             p.created_at, 
             u.username,
+            u.profile_picture,
             (SELECT COUNT(*) FROM likes l WHERE l.post_id = p.id) AS likes,
             EXISTS (SELECT 1 FROM likes l WHERE l.post_id = p.id AND l.user_id = ?) AS is_liked,
             (SELECT COUNT(*) FROM comments c WHERE c.post_id = p.id) AS comments
@@ -1203,10 +1204,10 @@ try {
             <div class="nav-left">
                 <ul class="nav-links">
                     <li><a href="../index.php">Home</a></li>
-                    <li><a href="index(4) (6).html">Features</a></li>
-                    <li><a href="index(4) (6).html">Gallery</a></li>
-                    <li><a href="/Pages/Marketplace.php" class="marketplace-link">Marketplace</a></li>
-                    <li><a href="index (4) (6).html#about">About Us</a></li>
+                    <li><a href="../index.php#features">Features</a></li>
+                    <li><a href="../index.php#gallery">Gallery</a></li>
+                    <li><a href="Marketplace.php" class="marketplace-link">Marketplace</a></li>
+                    <li><a href="">About Us</a></li>
                 </ul>
             </div>
             <div class="logo">VirtuGallery</div>
@@ -1251,19 +1252,19 @@ try {
                             </div>
                         </div>
                         <div class="sidebarbuttons">
-                            <a href="home.html" class="Home active">
+                            <a href="home.php" class="Home active">
                                 <i class="fas fa-home"></i>
                                 <span>Home</span>
                             </a>
-                            <a href="notifications.html" class="Notifications">
+                            <a href="notifications.php" class="Notifications">
                                 <i class="fas fa-bell"></i>
                                 <span>Notifications</span>
                             </a>
-                            <a href="ranking.html" class="Ranking">
+                            <a href="ranking.php" class="Ranking">
                                 <i class="fas fa-trophy"></i>
                                 <span>Ranking</span>
                             </a>
-                            <a href="settings.html" class="Settings">
+                            <a href="settings.php" class="Settings">
                                 <i class="fas fa-cog"></i>
                                 <span>Settings</span>
                             </a>
@@ -1281,7 +1282,7 @@ try {
                     <div class="overlay-content">
                         <div class="artist-header">
                             <div class="artist-avatar-container">
-                                <img src="../images/babaengghibli.png" class="artist-avatar" alt="Artist">
+                                <img src="uploads/profile_pictures/<?= $post['profile_picture'] ? htmlspecialchars($post['profile_picture']) : 'default.jpg' ?>" alt="User Photo">
                             </div>
                             <h2 class="artist-username">chatgpt_artist</h2>
                             <button class="follow-btn">Follow</button>
@@ -1732,7 +1733,7 @@ try {
 
                 artworkElement.innerHTML = `
             <div class="feed-header">
-                <img src="https://via.placeholder.com/36" class="feed-avatar" alt="User">
+                <img src="${artwork.profile_picture}" class="feed-avatar" alt="User">
                 <div class="feed-user-info">
                     <div class="feed-username">${artwork.username || 'Anonymous'}</div>
                     <div class="feed-location">${artwork.category || 'Art'}</div>
@@ -1760,7 +1761,7 @@ try {
                 <span class="feed-caption-username">${artwork.username || 'Anonymous'}</span>
                 <span>${artwork.description}</span>
             </div>
-            ${artwork.post_type === 'product' && artwork.price ? `<div class="feed-caption">Price: ₱${parseFloat(artwork.price).toFixed(2)}</div>` : ''}
+            
             ${artwork.tags ? `<div class="feed-caption post-tags">${artwork.tags}</div>` : ''}
             <div class="feed-comments">View all ${(artwork.comments || 0)} comments</div>
             <div class="feed-time">${timestamp}</div>
